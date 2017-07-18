@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSP example</title>
+    <link href="public/style.css" rel="stylesheet">
+    <style>
+        body {background-color: red}
+    </style>
+</head>
+<body>
+<h1>CSP example</h1>
+<div id="test"></div>
+<div id="test2"></div>
+<div id="test3"></div>
+<div id="test4"></div>
+<img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif" alt="cat gif">
+<img src="public/logo.svg" alt="logo">
+<button onclick="alert('you clicked a button')">Click me</button>
+<script src="public/script.js"></script>
+<script src="public/script2.js"></script>
+<script>
+  document.querySelector('#test3').textContent = 'Hi from inline script';
+</script>
+<script nonce="random">
+  document.querySelector('#test4').textContent = 'Hi from nonced inline script';
+</script>
+</body>
+</html>
